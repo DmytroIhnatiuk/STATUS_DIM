@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"monolit" })
+	<body class="body text-dark-blue">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+			<main>
+				<section
+					class="lg:h-[100vh] h-[6.7rem] sm:h-[8rem] pt-[var(--header-height)] pb-[var(--section-padding)] lg:pb-[.9rem] promo relative flex items-end overflow-hidden"
+				>
+					<div class="container">
+						<picture>
+							<source
+								srcset="@img/individual_projection_promo.png"
+								media="(min-width: 640px)"
+							/>
+							<img
+								src="@img/individual_projection_promo_sm.png"
+								alt="Promo Background"
+								class="promo-bg"
+							/>
+						</picture>
+						<div
+							class="text-white py-24 relative z-10 grid lg:grid-cols-[2fr,1fr] gap-16"
+							data-aos="fade-up"
+							data-aos-delay="500"
+						>
+							<h1 class="tracking-tight uppercase font-semibold">
+								індивідуальне проєктування -
+								<span class="font-normal"> створюйте без обмежень</span>
+							</h1>
+
+							<button
+								data-modal="callback"
+								class="lg:justify-self-end text-s border border-solid border-white rounded-30 sm:size-fit uppercase font-semibold bg-transparent w-full py-16 px-24 lg:hover:bg-blue lg:hover:border-blue active:border-blue active:bg-blue transition-colors duration-300"
+							>
+								<span>Отримати консультацію</span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="pt-[1.3rem] pb-100 sm:pb-[1.3rem]">
+					<div class="container">
+						<div class="grid lg:grid-cols-2 gap-x-20 gap-y-32">
+							<div data-aos="fade-up">
+								<h2 class="h3 font-semibold mb-24 sm:mb-32 uppercase">
+									Індивідуальне <br />
+									проєктування від Status Dim
+								</h2>
+								<p class="pb-16 font-medium">
+									це процес створення унікального архітектурного проєкту, який
+									повністю відповідає вашим особистим потребам, вподобанням та
+									стилю життя. Компанія надає комплексний підхід до розробки
+									проєктів, враховуючи всі деталі та ваші побажання
+								</p>
+
+								<button
+									data-modal="callback"
+									class="text-s w-full sm:w-[2.48rem] btn-main"
+								>
+									<span class="z-10">отримати консультацію</span>
+								</button>
+							</div>
+							<div
+								data-aos="fade-up"
+								data-aos-delay="200"
+								class="image h-[1.8rem] sm:h-[3.8rem]"
+							>
+								<img src="@img/individual_2.png" alt="building" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="py-[1rem] sm:py-[1.3rem] bg-light-blue">
+					<div class="container">
+						<div data-aos="fade-up" class="flex justify-between mb-32 sm:mb-40">
+							<h2 class="uppercase font-semibold">
+								Переваги індивідуального проєктування
+							</h2>
+							<button class="text-s btn-main hidden lg:flex flex-shrink-0">
+								<span class="z-10">Отримати консультацію </span>
+							</button>
+						</div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="200"
+							class="grid lg:grid-cols-4 sm:grid-cols-2 gap-16 sm:gap-20"
+						>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">
+											Повна відповідність потребам і побажанням
+										</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Проєкт розробляється з урахуванням ваших вподобань щодо
+											дизайну, планування, площі та функціональності</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Унікальність і ексклюзивність</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Будинок повністю відповідатиме вашому стилю життя та
+											вирізнятиметься серед стандартних проєктів</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Оптимізація простору</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Індивідуальний проєкт дозволяє максимально ефективно
+											використати площу, враховуючи особливості ділянки та
+											навколишнього середовища</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Вибір матеріалів і технологій</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Ви самостійно або за допомогою професіоналів обираєте
+											матеріали та будівельні технології, які відповідають вашим
+											вимогам щодо якості, бюджету та екологічності</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Енергоефективність</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Індивідуальний проєкт дає змогу впровадити сучасні
+											рішення, які зменшать витрати на опалення, охолодження та
+											експлуатацію будинку</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Гнучкість у плануванні бюджету</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Ви контролюєте витрати, обираючи рішення, які відповідають
+											вашим фінансовим можливостям</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Врахування специфіки ділянки</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Архітектори враховують рельєф, орієнтацію на сторони
+											світу, кліматичні умови та інші особливості вашої
+											земельної ділянки</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-blue border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-blue">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Комфорт і функціональність</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-dark-blue after:w-2 after:bg-dark-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Будинок буде створений для вашої зручності, включаючи всі
+											необхідні приміщення та зони для відпочинку, роботи та
+											хобі</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<button
+								data-modal="callback"
+								class="text-s btn-main lg:hidden mx-auto col-start-1 sm:col-end-3 w-full sm:w-auto"
+							>
+								<span class="z-10">Отримати консультацію </span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="py-[1rem] sm:py-[1.3rem]">
+					<div class="container">
+						<h2 class="h3 font-semibold mb-24 sm:mb-[.64rem] uppercase">
+							Основні етапи <br />
+							індивідуального проєктування
+						</h2>
+						<div class="grid lg:grid-cols-12 gap-20">
+							<div class="lg:col-start-1 lg:col-end-7">
+								<div class="image pt-[50%]">
+									<img src="@img/individual_3.png" alt="img" />
+								</div>
+							</div>
+							<div class="lg:col-start-8 lg:col-end-13">
+								<div class="border-l border-solid border-light-blue px-16 pb-8 mb-24 sm:mb-[.54rem]">
+									<h3 class="h2 font-medium mb-8 text-blue">01</h3>
+									<div class="text-blue font-medium h4 mb-4">
+										Консультація та аналіз потреб
+									</div>
+									<ul>
+										<li class="pl-24 relative">
+											<span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Обговорення з клієнтом його бачення майбутнього
+												будинку, функціональних вимог та естетичних
+												уподобань.</span
+											>
+										</li>
+										<li class="pl-24 relative"><span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Вивчення особливостей ділянки забудови та місцевих умов.</span</li>
+									</ul>
+								</div>
+                <div class="border-l border-solid border-light-blue px-16 pb-8 mb-24 sm:mb-[.54rem]">
+									<h3 class="h2 font-medium mb-8 text-blue">02</h3>
+									<div class="text-blue font-medium h4 mb-4">
+										Розробка ескізного проєкту
+									</div>
+									<ul>
+										<li class="pl-24 relative">
+											<span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Створення початкових ескізів та планувальних рішень.</span
+											>
+										</li>
+										<li class="pl-24 relative"><span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Візуалізація зовнішнього вигляду будинку та його інтер'єрів.</span</li>
+									</ul>
+								</div>
+                <div class="border-l border-solid border-light-blue px-16 pb-8 mb-24 sm:mb-[.54rem]">
+									<h3 class="h2 font-medium mb-8 text-blue">03</h3>
+									<div class="text-blue font-medium h4 mb-4">
+										Детальне проєктування
+									</div>
+									<ul>
+										<li class="pl-24 relative">
+											<span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Розробка робочих креслень та технічної документації.</span
+											>
+										</li>
+										<li class="pl-24 relative"><span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Підбір матеріалів та інженерних рішень.</span</li>
+									</ul>
+								</div>
+                <div class="border-l border-solid border-light-blue px-16 pb-8 mb-24 sm:mb-[.54rem]">
+									<h3 class="h2 font-medium mb-8 text-blue">04</h3>
+									<div class="text-blue font-medium h4 mb-4">
+										Узгодження та коригування
+									</div>
+									<ul>
+										<li class="pl-24 relative">
+											<span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Обговорення проєкту з клієнтом, внесення необхідних змін.</span
+											>
+										</li>
+										<li class="pl-24 relative"><span
+												class="before:size-6 before:absolute before:rounded before:bg-dark-blue before:left-8 before:top-1/2 before:-translate-y-1/2"
+												>Підготовка остаточного варіанту проєкту для реалізації.</span</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+        <section >
+					<div class="lg:px-[var(--container-gap)] pl-[var(--container-gap)]">
+
+						
+							<div class="flex justify-between mb-16 pr-[var(--container-gap)]">
+						<h2 class=" font-semibold max-w-[4.5rem] lg:max-w-[6rem] mb-24 uppercase">
+							Наші проєкти
+						</h2>
+								<button data-da=".projects-btn,1023,1" class="btn-main">
+									<span class="z-10">Переглянути всі проєкти</span>
+								</button>
+							</div>
+									<div class="swiper mb-40" data-swiper="projects">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div>
+													<div class="relative">
+														<div class="swiper mb-14" data-swiper="project">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<button
+															class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+														<button
+															class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="flex gap-8 mb-14 flex-wrap">
+														<div class="project-tag">Проєкт Zx84</div>
+														<div class="project-tag">111 м²</div>
+														<div class="project-tag">Реалізацій : 12</div>
+													</div>
+													<a href="#" class="flex gap-12 project-link">
+														<h3 class="h4 font-semibold text-clamp_2">
+															Одноповерховий сучасний будинок з плоским дахом
+														</h3>
+														<div
+															class="rounded flex-center size-40 bg-blue flex-shrink-0"
+														>
+															<svg
+																class="size-20 fill-white transition-transform duration-300 ease-linear"
+															>
+																<use href="#arrow-icon"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div>
+													<div class="relative">
+														<div class="swiper mb-14" data-swiper="project">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<button
+															class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+														<button
+															class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="flex gap-8 flex-wrap mb-14">
+														<div class="project-tag">Проєкт Zx84</div>
+														<div class="project-tag">111 м²</div>
+														<div class="project-tag">Реалізацій : 12</div>
+													</div>
+													<a href="#" class="flex gap-12 project-link">
+														<h3 class="h4 font-semibold text-clamp_2">
+															Одноповерховий сучасний будинок з плоским дахом
+														</h3>
+														<div
+															class="rounded flex-center size-40 bg-blue flex-shrink-0"
+														>
+															<svg
+																class="size-20 fill-white transition-transform duration-300 ease-linear"
+															>
+																<use href="#arrow-icon"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div>
+													<div class="relative">
+														<div class="swiper mb-14" data-swiper="project">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<button
+															class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+														<button
+															class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="flex gap-8 flex-wrap mb-14">
+														<div class="project-tag">Проєкт Zx84</div>
+														<div class="project-tag">111 м²</div>
+														<div class="project-tag">Реалізацій : 12</div>
+													</div>
+													<a href="#" class="flex gap-12 project-link">
+														<h3 class="h4 font-semibold text-clamp_2">
+															Одноповерховий сучасний будинок з плоским дахом
+														</h3>
+														<div
+															class="rounded flex-center size-40 bg-blue flex-shrink-0"
+														>
+															<svg
+																class="size-20 fill-white transition-transform duration-300 ease-linear"
+															>
+																<use href="#arrow-icon"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div>
+													<div class="relative">
+														<div class="swiper mb-14" data-swiper="project">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+																<div class="swiper-slide">
+																	<div
+																		class="image w-full h-[2.06rem] sm:h-[2.8rem]"
+																	>
+																		<img
+																			class="object-cover"
+																			src="@img/project_slider.png"
+																			alt="project"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<button
+															class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+														<button
+															class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+														>
+															<svg
+																class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+															>
+																<use href="#shevron-icon"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="flex gap-8 flex-wrap mb-14">
+														<div class="project-tag">Проєкт Zx84</div>
+														<div class="project-tag">111 м²</div>
+														<div class="project-tag">Реалізацій : 12</div>
+													</div>
+													<a href="#" class="flex gap-12 project-link">
+														<h3 class="h4 font-semibold text-clamp_2">
+															Одноповерховий сучасний будинок з плоским дахом
+														</h3>
+														<div
+															class="rounded flex-center size-40 bg-blue flex-shrink-0"
+														>
+															<svg
+																class="size-20 fill-white transition-transform duration-300 ease-linear"
+															>
+																<use href="#arrow-icon"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="flex gap-16 justify-center mx-center mb-36 sm:mb-0">
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group projects-prev"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear rotate-180 group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group projects-next"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+									</div>
+								
+
+							
+							<div class="flex justify-center projects-btn"></div>
+						
+					</div>
+				</section>
+
+				<section
+					class="py-[1rem] sm:py-[1.3rem]"
+					data-aos="fade-up"
+					class="gap-16 sm:gap-20"
+				>
+					<div class="container">
+						<div class="py-50 sm:py-100 px-16 bg-light-blue">
+							<h2
+								class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+							>
+								Зробіть перший крок! Залиште свої контактні дані і отримайте
+								розрахунок кошторису
+							</h2>
+							<form
+								action="#"
+								class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+							>
+								<div class="flex flex-col">
+									<label for="name" class="text-s mb-4"> Ім’я</label>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<div class="flex flex-col">
+									<label for="phone_1" class="text-s mb-4">
+										Номер телефона</label
+									>
+									<input
+										type="text"
+										name="phone_1 "
+										id="phone_1"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<div class="flex flex-col">
+									<label for="mail" class="text-s mb-4"> E-mail</label>
+									<input
+										type="text"
+										name="mail"
+										id="mail"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<button class="text-s btn-main mt-auto">
+									<span class="z-10">залишити заявку</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		@@include('html/_js.html',{})
+	</body>
+</html>

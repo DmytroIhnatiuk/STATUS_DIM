@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"monolit" })
+	<body class="body text-dark-blue">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+			<main>
+				<div
+					class="container mt-[calc(var(--header-height)+.32rem)] mb-16 sm:mb-24"
+				>
+					<div class="flex font-medium">
+						<a
+							class="lg:hover:scale-[1.05] transition-transform duration-300 ease-linear last:pointer-events-none last:font-semibold"
+							href="#"
+							>Головна
+						</a>
+						<span class="px-4">/</span>
+						<a
+							class="lg:hover:scale-[1.05] transition-transform duration-300 ease-linear last:pointer-events-none last:font-semibold"
+							href="#"
+							>Наші проєкти
+						</a>
+						<span class="px-4">/</span>
+						<a
+							class="lg:hover:scale-[1.05] transition-transform duration-300 ease-linear last:pointer-events-none last:font-semibold"
+							href="#"
+							>Zx84</a
+						>
+					</div>
+				</div>
+				<section class="mb-[.9rem]">
+					<div class="container">
+						<div class="grid lg:grid-cols-[2fr,1fr] gap-20">
+							<div class="min-w-0">
+								<div
+									class="w-full h-[2.04rem] sm:h-[4.9rem] swiper mb-16"
+									data-swiper="sliderProjectLg"
+								>
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_1.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_2.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_3.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_1.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+									</div>
+									<button
+										class="sliderProjectLg-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+									>
+										<svg
+											class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+										>
+											<use href="#shevron-icon"></use>
+										</svg>
+									</button>
+									<button
+										class="sliderProjectLg-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+									>
+										<svg
+											class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+										>
+											<use href="#shevron-icon"></use>
+										</svg>
+									</button>
+								</div>
+								<div
+									class="swiper h-[.45rem] sm:h-[1.2rem]"
+									data-swiper="sliderProjectLgNav"
+								>
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_1.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_1.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_2.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image size-full">
+												<img
+													class="object-cover"
+													src="@img/project-1_3.png"
+													alt="project"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<h1 class="h3 font-semibold mb-12">Zx84</h1>
+								<div class="flex gap-8 overflow-x-scroll mb-24">
+									<div class="project-tag">Проєкт Zx84</div>
+									<div class="project-tag">111 м²</div>
+									<div class="project-tag">Реалізацій : 12</div>
+								</div>
+								<div
+									class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-20 mb-24"
+								>
+									<h2 class="h3 text-blue font-semibold">144 500 грн</h2>
+									<button class="btn-main w-full px-6">
+										<span class="z-10"> Замовити ПРОЄКТ</span>
+									</button>
+								</div>
+								<div
+									class="grid sm:grid-cols-2 gap-x-20 gap-y-8 sm:gap-y-12 mb-24"
+								>
+									<div
+										class="border border-solid border-light-blue py-8 px-12 lg:p-12 rounded-8 flex gap-8"
+									>
+										<span
+											class="size-24 flex-center before:w-2 before:h-14 before:bg-dark-blue relative after:top-1/2 after:-translate-y-1/2 after:absolute after:w-14 after:h-2 after:bg-dark-blue"
+										>
+										</span>
+										<div
+											class="grid grid-cols-2 lg:grid-cols-1 items-center gap-4 w-full"
+										>
+											<div class="h4 font-semibold">Матеріал</div>
+											<div class="font-semibold text-blue">Цегла</div>
+										</div>
+									</div>
+									<div
+										class="border border-solid border-light-blue py-8 px-12 lg:p-12 rounded-8 flex gap-8"
+									>
+										<span
+											class="size-24 flex-center before:w-2 before:h-14 before:bg-dark-blue relative after:top-1/2 after:-translate-y-1/2 after:absolute after:w-14 after:h-2 after:bg-dark-blue"
+										>
+										</span>
+										<div
+											class="grid grid-cols-2 lg:grid-cols-1 items-center gap-4 w-full"
+										>
+											<div class="h4 font-semibold">Поверхів</div>
+											<div class="font-semibold text-blue">1</div>
+										</div>
+									</div>
+									<div
+										class="border border-solid border-light-blue py-8 px-12 lg:p-12 rounded-8 flex gap-8"
+									>
+										<span
+											class="size-24 flex-center before:w-2 before:h-14 before:bg-dark-blue relative after:top-1/2 after:-translate-y-1/2 after:absolute after:w-14 after:h-2 after:bg-dark-blue"
+										>
+										</span>
+										<div
+											class="grid grid-cols-2 lg:grid-cols-1 items-center gap-4 w-full"
+										>
+											<div class="h4 font-semibold">Спалень</div>
+											<div class="font-semibold text-blue">3</div>
+										</div>
+									</div>
+									<div
+										class="border border-solid border-light-blue py-8 px-12 lg:p-12 rounded-8 flex gap-8"
+									>
+										<span
+											class="size-24 flex-center before:w-2 before:h-14 before:bg-dark-blue relative after:top-1/2 after:-translate-y-1/2 after:absolute after:w-14 after:h-2 after:bg-dark-blue"
+										>
+										</span>
+										<div
+											class="grid grid-cols-2 lg:grid-cols-1 items-center gap-4 w-full"
+										>
+											<div class="h4 font-semibold">Санвузлів</div>
+											<div class="font-semibold text-blue">1</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion mb-16">
+									<div
+										class="accordion-header flex justify-between items-center font-semibold px-12 py-8 rounded-8 bg-light-blue lg:hover:scale-[1.01] transition-transform duration-300"
+									>
+										ПЛОЩА І ГАБАРИТИ ПЛОЩА І ГАБАРИТИ
+										<div
+											class="size-40 border border-solid border-dark-blue relative rounded flex-shrink-0"
+										>
+											<span
+												class="after:block after:w-2 after:bg-dark-blue after:top-1/2 after:right-1/2 after:translate-x-1/2 after:-translate-y-1/2 after:absolute before:w-20 before:h-2 before:bg-dark-blue before:top-1/2 before:right-1/2 before:translate-x-1/2 before:-translate-y-1/2 before:absolute"
+											></span>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div>
+											<div
+												class="grid grid-cols-[1fr,1.4rem] gap-x-12 sm:gap-x-32 gap-y-8 pl-8 sm:pl-12 pt-16"
+											>
+												<div class="text-blue font-medium">Тип фундаменту</div>
+												<div class="font-semibold">
+													стрічковий збірно-монолітний
+												</div>
+												<div class="text-blue font-medium">
+													Конструкція даху
+												</div>
+												<div class="font-semibold">монолітне</div>
+												<div class="text-blue font-medium">Технологія</div>
+												<div class="font-semibold">кам’яна</div>
+												<div class="text-blue font-medium">Вентиляція</div>
+												<div class="font-semibold">механічна</div>
+												<div class="text-blue font-medium">Стіни</div>
+												<div class="font-semibold">
+													газобетон, керамічні блоки, піноблоки, пінобетон
+												</div>
+												<div class="text-blue font-medium">Дах</div>
+												<div class="font-semibold">
+													цементно-піщана черепиця, металочерепиця, керамічна
+													черепиця
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion mb-16">
+									<div
+										class="accordion-header flex justify-between items-center font-semibold px-12 py-8 rounded-8 bg-light-blue lg:hover:scale-[1.01] transition-transform duration-300"
+									>
+										ПЛОЩА І ГАБАРИТИ
+										<div
+											class="size-40 border border-solid border-dark-blue relative rounded"
+										>
+											<span
+												class="after:block after:w-2 after:bg-dark-blue after:top-1/2 after:right-1/2 after:translate-x-1/2 after:-translate-y-1/2 after:absolute before:w-20 before:h-2 before:bg-dark-blue before:top-1/2 before:right-1/2 before:translate-x-1/2 before:-translate-y-1/2 before:absolute flex-shrink-0"
+											></span>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div>
+											<div
+												class="grid grid-cols-[1fr,1.4rem] gap-x-12 sm:gap-x-32 gap-y-8 pl-8 sm:pl-12 pt-16"
+											>
+												<div class="text-blue font-medium">Тип фундаменту</div>
+												<div class="font-semibold">
+													стрічковий збірно-монолітний
+												</div>
+												<div class="text-blue font-medium">
+													Конструкція даху
+												</div>
+												<div class="font-semibold">монолітне</div>
+												<div class="text-blue font-medium">Технологія</div>
+												<div class="font-semibold">кам’яна</div>
+												<div class="text-blue font-medium">Вентиляція</div>
+												<div class="font-semibold">механічна</div>
+												<div class="text-blue font-medium">Стіни</div>
+												<div class="font-semibold">
+													газобетон, керамічні блоки, піноблоки, пінобетон
+												</div>
+												<div class="text-blue font-medium">Дах</div>
+												<div class="font-semibold">
+													цементно-піщана черепиця, металочерепиця, керамічна
+													черепиця
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion mb-16">
+									<div
+										class="accordion-header flex justify-between items-center font-semibold px-12 py-8 rounded-8 bg-light-blue lg:hover:scale-[1.01] transition-transform duration-300"
+									>
+										ПЛОЩА І ГАБАРИТИ
+										<div
+											class="size-40 border border-solid border-dark-blue relative rounded"
+										>
+											<span
+												class="after:block after:w-2 after:bg-dark-blue after:top-1/2 after:right-1/2 after:translate-x-1/2 after:-translate-y-1/2 after:absolute before:w-20 before:h-2 before:bg-dark-blue before:top-1/2 before:right-1/2 before:translate-x-1/2 before:-translate-y-1/2 before:absolute flex-shrink-0"
+											></span>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div>
+											<div
+												class="grid grid-cols-[1fr,1.4rem] gap-x-12 sm:gap-x-32 gap-y-8 pl-8 sm:pl-12 pt-16"
+											>
+												<div class="text-blue font-medium">Тип фундаменту</div>
+												<div class="font-semibold">
+													стрічковий збірно-монолітний
+												</div>
+												<div class="text-blue font-medium">
+													Конструкція даху
+												</div>
+												<div class="font-semibold">монолітне</div>
+												<div class="text-blue font-medium">Технологія</div>
+												<div class="font-semibold">кам’яна</div>
+												<div class="text-blue font-medium">Вентиляція</div>
+												<div class="font-semibold">механічна</div>
+												<div class="text-blue font-medium">Стіни</div>
+												<div class="font-semibold">
+													газобетон, керамічні блоки, піноблоки, пінобетон
+												</div>
+												<div class="text-blue font-medium">Дах</div>
+												<div class="font-semibold">
+													цементно-піщана черепиця, металочерепиця, керамічна
+													черепиця
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mb-[.9rem]">
+					<div class="container">
+						<h2 class="font-semibold uppercase mb-24">ПЛАНУВАННЯ БУДИНКУ</h2>
+						<div
+							class="bg-light-blue py-24 px-8 sm:px-24 grid lg:grid-cols-[1fr,2fr] gap-20 tabs-container"
+						>
+							<div class="tab__buttons flex lg:flex-col sm:gap-24">
+								<div
+									class="tab__button h3 font-semibold flex items-center text-blue opacity-50 hover:opacity-100 cursor-pointer w-max"
+								>
+									<span class="mr-14">1й поверх</span>
+									<div
+										class="rounded sm:flex-center size-40 border border-solid border-dark-blue flex-shrink-0 hidden"
+									>
+										<svg
+											class="size-20 fill-dark-blue transition-transform duration-300 ease-linear"
+										>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</div>
+								</div>
+								<div
+									class="tab__button h3 font-semibold flex items-center text-blue opacity-50 hover:opacity-100 cursor-pointer w-max"
+								>
+									<span class="mr-14">2й поверх</span>
+									<div
+										class="rounded sm:flex-center size-40 border border-solid border-dark-blue flex-shrink-0 hidden"
+									>
+										<svg
+											class="size-20 fill-dark-blue transition-transform duration-300 ease-linear"
+										>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="tab__contents relative">
+								<div
+									class="tab__content sm:grid grid-cols-2 gap-20 bg-light-blue opacity-0 transition-opacity duration-300"
+								>
+									<div
+										class="lg:h-[4.8rem] sm:h-[4rem] h-[3.5rem] w-full mb-8 sm:mb-auto"
+									>
+										<img
+											class="object-contain object-top size-full"
+											src="@img/plan_1.png"
+											alt="plan"
+										/>
+									</div>
+									<div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Вітальня</div>
+											<div class="font-semibold">37,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Кухня</div>
+											<div class="font-semibold">10,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Передпокій</div>
+											<div class="font-semibold">3,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Сан вузол</div>
+											<div class="font-semibold">3,1 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Ванна кімната</div>
+											<div class="font-semibold">6,1 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Хол</div>
+											<div class="font-semibold">9,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Спальня 1</div>
+											<div class="font-semibold">10,7 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Спальня 2</div>
+											<div class="font-semibold">12,1 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Спальня 3</div>
+											<div class="font-semibold">13,2 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Котельня</div>
+											<div class="font-semibold">5,5 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Тераса</div>
+											<div class="font-semibold">9,2 м²</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="tab__content sm:grid grid-cols-2 gap-20 bg-light-blue absolute top-0 left-0 opacity-0 transition-opacity duration-300"
+								>
+									<div
+										class="lg:h-[4.8rem] sm:h-[4rem] h-[3.5rem] w-full mb-8 sm:mb-auto"
+									>
+										<img
+											class="object-contain object-top size-full"
+											src="@img/about-slider_3.png"
+											alt="plan"
+										/>
+									</div>
+									<div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Вітальня</div>
+											<div class="font-semibold">37,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Кухня</div>
+											<div class="font-semibold">10,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Передпокій</div>
+											<div class="font-semibold">3,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Сан вузол</div>
+											<div class="font-semibold">3,1 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Ванна кімната</div>
+											<div class="font-semibold">6,1 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Хол</div>
+											<div class="font-semibold">9,3 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Спальня 1</div>
+											<div class="font-semibold">10,7 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Спальня 2</div>
+											<div class="font-semibold">12,1 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Спальня 3</div>
+											<div class="font-semibold">13,2 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Котельня</div>
+											<div class="font-semibold">5,5 м²</div>
+										</div>
+										<div
+											class="flex pb-8 mb-8 border-b border-solid border-blue justify-between last:mb-0"
+										>
+											<div class="font-medium text-blue">Тераса</div>
+											<div class="font-semibold">9,2 м²</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mb-[1.2rem]">
+					<div class="container">
+						<h2 class="font-semibold uppercase mb-24">Додаткові фото</h2>
+						<div class="grid lg:grid-cols-[1fr,2fr] gap-20 tabs-container">
+							<div class="tab__buttons flex flex-col gap-16 lg:gap-24">
+								<div
+									class="tab__button h3 font-semibold flex items-center text-blue opacity-50 hover:opacity-100 cursor-pointer w-max !bg-transparent"
+								>
+									<span class="mr-14">Проєкції</span>
+									<div
+										class="rounded sm:flex-center size-40 border border-solid border-dark-blue flex-shrink-0 hidden"
+									>
+										<svg
+											class="size-20 fill-dark-blue transition-transform duration-300 ease-linear"
+										>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</div>
+								</div>
+								<div
+									class="tab__button h3 font-semibold flex items-center text-blue opacity-50 hover:opacity-100 cursor-pointer w-max !bg-transparent"
+								>
+									<span class="mr-14">Візуалізації</span>
+									<div
+										class="rounded sm:flex-center size-40 border border-solid border-dark-blue flex-shrink-0 hidden"
+									>
+										<svg
+											class="size-20 fill-dark-blue transition-transform duration-300 ease-linear"
+										>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</div>
+								</div>
+								<div
+									class="tab__button h3 font-semibold flex items-center text-blue opacity-50 hover:opacity-100 cursor-pointer w-max !bg-transparent"
+								>
+									<span class="mr-14">Інтер’єр</span>
+									<div
+										class="rounded sm:flex-center size-40 border border-solid border-dark-blue flex-shrink-0 hidden"
+									>
+										<svg
+											class="size-20 fill-dark-blue transition-transform duration-300 ease-linear"
+										>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<!-- TODO пагінація між кнопками слайдра підключена, але через те що тут використовується 1 слайдер 3 рази і класи однакові,  вона глючить  -->
+
+							<div class="tab__contents relative min-w-0">
+								<div
+									class="tab__content opacity-0 transition-opacity duration-300"
+								>
+									<div class="swiper mb-24" data-swiper="sliderMorePhoto">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_1.png" alt="project" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_2.png" alt="project" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_3.png" alt="project" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="flex gap-16 justify-center lg:justify-start lg:ml-[1.33rem] mx-center items-center"
+									>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group sliderMorePhoto-prev"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear rotate-180 group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+										<div
+											class="sliderMorePhoto-pagination h4 font-semibold max-w-max text-blue fill-blue"
+										></div>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group sliderMorePhoto-next"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div
+									class="tab__content opacity-0 transition-opacity duration-300 absolute top-0 left-0 right-0"
+								>
+									<div class="swiper mb-24" data-swiper="sliderMorePhoto">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_3.png" alt="project" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_1.png" alt="project" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_2.png" alt="project" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="flex gap-16 justify-center lg:justify-start lg:ml-[1.33rem] mx-center items-center"
+									>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group sliderMorePhoto-prev"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear rotate-180 group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+										<div
+											class="sliderMorePhoto-pagination h4 font-semibold max-w-max text-blue fill-blue"
+										></div>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group sliderMorePhoto-next"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div
+									class="tab__content opacity-0 transition-opacity duration-300 absolute top-0 left-0 right-0"
+								>
+									<div class="swiper mb-24" data-swiper="sliderMorePhoto">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_3.png" alt="project" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_1.png" alt="project" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="image pt-[55%]">
+													<img src="@img/project-1_2.png" alt="project" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="flex gap-16 justify-center lg:justify-start lg:ml-[1.33rem] mx-center items-center"
+									>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group sliderMorePhoto-prev"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear rotate-180 group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+										<div
+											class="sliderMorePhoto-pagination h4 font-semibold max-w-max text-blue fill-blue"
+										></div>
+										<button
+											class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group sliderMorePhoto-next"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear group-hover:stroke-white"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mb-[.9rem]">
+					<div class="lg:px-[var(--container-gap)] pl-[var(--container-gap)]">
+						<div class="flex justify-between mb-16 pr-[var(--container-gap)]">
+							<h2
+								class="font-semibold max-w-[4.5rem] lg:max-w-[6rem] mb-24 uppercase"
+							>
+								схожі проєкти
+							</h2>
+							<button data-da=".projects-btn,1023,1" class="btn-main">
+								<span class="z-10">Переглянути всі проєкти</span>
+							</button>
+						</div>
+						<div class="swiper mb-40" data-swiper="projects">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div>
+										<div class="relative">
+											<div class="swiper mb-14" data-swiper="project">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+												</div>
+											</div>
+											<button
+												class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+											<button
+												class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="flex gap-8 mb-14 flex-wrap">
+											<div class="project-tag">Проєкт Zx84</div>
+											<div class="project-tag">111 м²</div>
+											<div class="project-tag">Реалізацій : 12</div>
+										</div>
+										<a href="#" class="flex gap-12 project-link">
+											<h3 class="h4 font-semibold text-clamp_2">
+												Одноповерховий сучасний будинок з плоским дахом
+											</h3>
+											<div
+												class="rounded flex-center size-40 bg-blue flex-shrink-0"
+											>
+												<svg
+													class="size-20 fill-white transition-transform duration-300 ease-linear"
+												>
+													<use href="#arrow-icon"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div>
+										<div class="relative">
+											<div class="swiper mb-14" data-swiper="project">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+												</div>
+											</div>
+											<button
+												class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+											<button
+												class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="flex gap-8 flex-wrap mb-14">
+											<div class="project-tag">Проєкт Zx84</div>
+											<div class="project-tag">111 м²</div>
+											<div class="project-tag">Реалізацій : 12</div>
+										</div>
+										<a href="#" class="flex gap-12 project-link">
+											<h3 class="h4 font-semibold text-clamp_2">
+												Одноповерховий сучасний будинок з плоским дахом
+											</h3>
+											<div
+												class="rounded flex-center size-40 bg-blue flex-shrink-0"
+											>
+												<svg
+													class="size-20 fill-white transition-transform duration-300 ease-linear"
+												>
+													<use href="#arrow-icon"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div>
+										<div class="relative">
+											<div class="swiper mb-14" data-swiper="project">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+												</div>
+											</div>
+											<button
+												class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+											<button
+												class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="flex gap-8 flex-wrap mb-14">
+											<div class="project-tag">Проєкт Zx84</div>
+											<div class="project-tag">111 м²</div>
+											<div class="project-tag">Реалізацій : 12</div>
+										</div>
+										<a href="#" class="flex gap-12 project-link">
+											<h3 class="h4 font-semibold text-clamp_2">
+												Одноповерховий сучасний будинок з плоским дахом
+											</h3>
+											<div
+												class="rounded flex-center size-40 bg-blue flex-shrink-0"
+											>
+												<svg
+													class="size-20 fill-white transition-transform duration-300 ease-linear"
+												>
+													<use href="#arrow-icon"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div>
+										<div class="relative">
+											<div class="swiper mb-14" data-swiper="project">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="image w-full h-[2.06rem] sm:h-[2.8rem]">
+															<img
+																class="object-cover"
+																src="@img/project_slider.png"
+																alt="project"
+															/>
+														</div>
+													</div>
+												</div>
+											</div>
+											<button
+												class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+											<button
+												class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-40 top-1/2 -translate-y-1/2"
+											>
+												<svg
+													class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+												>
+													<use href="#shevron-icon"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="flex gap-8 flex-wrap mb-14">
+											<div class="project-tag">Проєкт Zx84</div>
+											<div class="project-tag">111 м²</div>
+											<div class="project-tag">Реалізацій : 12</div>
+										</div>
+										<a href="#" class="flex gap-12 project-link">
+											<h3 class="h4 font-semibold text-clamp_2">
+												Одноповерховий сучасний будинок з плоским дахом
+											</h3>
+											<div
+												class="rounded flex-center size-40 bg-blue flex-shrink-0"
+											>
+												<svg
+													class="size-20 fill-white transition-transform duration-300 ease-linear"
+												>
+													<use href="#arrow-icon"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex gap-16 justify-center mx-center mb-36 sm:mb-0">
+							<button
+								class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group projects-prev"
+							>
+								<svg
+									class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear rotate-180 group-hover:stroke-white"
+								>
+									<use href="#shevron-icon"></use>
+								</svg>
+							</button>
+							<button
+								class="size-[0.62rem] rounded border border-solid border-blue flex-center bg-white hover:bg-blue transition-colors duration-300 flex-shrink-0 group projects-next"
+							>
+								<svg
+									class="size-24 fill-none stroke-blue transition-[stroke] duration-300 ease-linear group-hover:stroke-white"
+								>
+									<use href="#shevron-icon"></use>
+								</svg>
+							</button>
+						</div>
+
+						<div class="flex justify-center projects-btn"></div>
+					</div>
+				</section>
+				<section
+					class="mb-[1rem] sm:mb-[1.3rem]"
+					data-aos="fade-up"
+					class="gap-16 sm:gap-20"
+				>
+					<div class="container">
+						<div class="py-50 sm:py-100 px-16 bg-light-blue">
+							<h2 class="h3 font-medium max-w-[9rem] mx-auto text-center mb-32">
+								Є питання по проєкту? <br />
+								Залиште свої контактні дані і наші менеджери проконсультують вас
+							</h2>
+							<form
+								action="#"
+								class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+							>
+								<div class="flex flex-col">
+									<label for="name" class="text-s mb-4"> Ім’я</label>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<div class="flex flex-col">
+									<label for="phone_1" class="text-s mb-4">
+										Номер телефона</label
+									>
+									<input
+										type="text"
+										name="phone_1 "
+										id="phone_1"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<div class="flex flex-col">
+									<label for="mail" class="text-s mb-4"> E-mail</label>
+									<input
+										type="text"
+										name="mail"
+										id="mail"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<button class="text-s btn-main mt-auto">
+									<span class="z-10">залишити заявку</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		@@include('html/_js.html',{})
+	</body>
+</html>

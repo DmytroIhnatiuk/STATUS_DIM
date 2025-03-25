@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"services" })
+	<body class="body text-dark-blue">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+			<main>
+				<section
+					class="lg:h-[100vh] h-[6.7rem] sm:h-[8rem] pt-[var(--header-height)] pb-[var(--section-padding)] lg:pb-[.9rem] promo relative flex items-end overflow-hidden"
+				>
+					<div class="container">
+						<picture>
+							<source srcset="@img/services.jpg" media="(min-width: 640px)" />
+							<img
+								src="@img/services_sm.jpg"
+								alt="Promo Background"
+								class="promo-bg"
+							/>
+						</picture>
+						<div
+							class="text-white py-24 relative z-10 grid lg:grid-cols-3 gap-16"
+							data-aos="fade-up"
+							data-aos-delay="500"
+						>
+							<h1>Наші послуги</h1>
+							<div
+								class="font-medium text-l lg:text-[.2rem] lg:col-start-2 lg:col-end-4"
+							>
+								Компанія Status Dim пропонує комплексні генпідрядні послуги для
+								сучасного будівництва. Ми беремо на себе повну відповідальність
+								за реалізацію проєкту – від початкових етапів до введення
+								об’єкта в експлуатацію.
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pt-[1rem] sm:pt-[1.3rem]">
+					<div class="container">
+						<div
+							data-aos="fade-up"
+							class="flex items-center justify-between mb-32 sm:mb-40"
+						>
+							<h2 class="font-medium">Наші послуги включають</h2>
+							<button data-modal="callback" class="btn-main hidden lg:block">
+								<span class="z-10 relative">Отримати консультацію </span>
+							</button>
+						</div>
+						<div
+							data-aos="fade-up"
+							data-aos-delay="200"
+							class="grid lg:grid-cols-3 sm:grid-cols-2 gap-16 sm:gap-20"
+						>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<svg
+									class="size-[.54rem] fill-blue mx-auto hidden sm:block mb-8"
+								>
+									<use href="#planning-icon"></use>
+								</svg>
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Проектування та планування</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Ми допоможемо розробити індивідуальний проект, що повністю
+											відповідає вашим вимогам та сучасним стандартам.</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-b-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<svg
+									class="size-[.54rem] fill-blue mx-auto hidden sm:block mb-8"
+								>
+									<use href="#permission-icon"></use>
+								</svg>
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Отримання дозволів</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Організовуємо всі юридичні та технічні процеси для
+											отримання необхідних документів</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<svg
+									class="size-[.54rem] fill-blue mx-auto hidden sm:block mb-8"
+								>
+									<use href="#construction-icon"></use>
+								</svg>
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Будівельні роботи</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Всі етапи будівництва, від монолітних робіт до фінальної
+											обробки, виконуються нашою командою з дотриманням найвищих
+											стандартів якості</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<svg
+									class="size-[.54rem] fill-blue mx-auto hidden sm:block mb-8"
+								>
+									<use href="#planning-icon"></use>
+								</svg>
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Інженерні мережі</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Ми забезпечимо повний комплекс робіт з прокладання та
+											налаштування електрики, водопостачання, каналізації,
+											опалення та вентиляції.</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<svg
+									class="size-[.54rem] fill-blue mx-auto hidden sm:block mb-8"
+								>
+									<use href="#decoration-icon"></use>
+								</svg>
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Оздоблювальні роботи</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Включають фінальний етап підбору матеріалів та їх
+											улаштування, які відповідають вашим естетичним і
+											функціональним вимогам.</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-blue border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<svg
+									class="size-[.54rem] fill-blue mx-auto hidden sm:block mb-8"
+								>
+									<use href="#landscape-icon"></use>
+								</svg>
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Ландшафтні роботи</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Додатково ми пропонуємо благоустрій території навколо
+											будинку</span
+										>
+									</div>
+								</div>
+							</div>
+							<button
+								data-modal="callback"
+								class="btn-main lg:hidden col-start-1 sm:col-end-3 w-full sm:w-max mx-auto"
+							>
+								<span class="z-10 relative">Отримати консультацію </span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="py-[1rem] sm:py-[1.3rem]">
+					<div class="container">
+						<div class="lg:flex justify-between items-end mb-24 sm:mb-36">
+							<h2 class="font-medium mb-16 sm:mb-0 max-w-[9.8rem]">
+								Компанія Status Dim пропонує індивідуальні та типові проєкти
+								будинків
+							</h2>
+							<div class="text-l font-medium max-w-[3.25rem]">
+								Порівняйте та оберіть ідеальне рішення для вашого будинку
+							</div>
+						</div>
+						<div class="grid lg:grid-cols-2 gap-20 mb-24">
+							<div class="image w-full pt-[49.5%]">
+								<img src="@img/project_slider.png" alt="img" />
+							</div>
+							<div class="image w-full pt-[49.5%] hidden lg:block">
+								<img src="@img/individual.png" alt="img" />
+							</div>
+						</div>
+						<div class="grid lg:grid-cols-2 gap-20">
+							<div class="accordion accordion-services">
+								<div
+									class="accordion-header flex justify-center items-center sm:p-16 p-8 text-[.2rem] uppercase font-semibold w-full relative bg-light-blue rounded-8 min-h-[.56rem] cursor-pointer pr-50 text-center"
+								>
+									Типові проєкти
+									<span
+										class="size-40 flex items-center justify-center before:w-[.20rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden absolute right-8 top-1/2 -translate-y-1/2"
+									></span>
+								</div>
+								<div
+									class="accordion-content sm:max-h-max w-full flex flex-col justify-between"
+								>
+									<div
+										class="border-[2px] border-solid border-light-blue py-32 px-8 sm:px-24 rounded-8 mb-16 sm:mb-26 sm:min-h-[4.4rem]"
+									>
+										<ul>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Для кого?
+													</div>
+													<p>
+														Для тих, хто бажає швидко отримати перевірене
+														рішення за доступною ціною
+													</p>
+												</div>
+											</li>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Гнучкість у плануванні
+													</div>
+													<p>Обмежена - зміни можливі, але з обмеженням</p>
+												</div>
+											</li>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Термін розробки
+													</div>
+													<p>
+														Короткий – готові проєкти можна отримати майже
+														відразу
+													</p>
+												</div>
+											</li>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Врахування особливостей ділянки
+													</div>
+													<p>
+														Стандартне рішення, яке не завжди ідеально підходить
+														до конкретної ділянки і потребує адаптації проєкту
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<button
+										class="border border-solid border-dark-blue rounded-30 p-16 font-s bg-white uppercase text-dark-blue font-semibold w-full lg:w-[calc(100%-.48rem)] text-center mx-auto block lg:hover:bg-dark-blue lg:hover:text-white transition-colors duration-300 ease-linear mb-[2px]"
+									>
+										переглянути Типові проєкти
+									</button>
+								</div>
+							</div>
+							<div class="accordion accordion-services h-full">
+								<div
+									class="accordion-header flex justify-center items-center sm:p-16 p-8 text-[.2rem] uppercase font-semibold w-full relative bg-light-blue rounded-8 min-h-[.56rem] cursor-pointer pr-50 text-center"
+								>
+									Індивідуальне проєктування
+									<span
+										class="size-40 flex items-center justify-center before:w-[.20rem] before:h-2 before:bg-blue after:w-2 after:bg-blue after:absolute sm:hidden absolute right-8 top-1/2 -translate-y-1/2"
+									></span>
+								</div>
+								<div class="accordion-content sm:max-h-max w-full">
+									<div
+										class="border-[2px] border-solid border-light-blue py-32 px-8 sm:px-24 rounded-8 mb-16 sm:mb-26 sm:min-h-[4.4rem]"
+									>
+										<ul>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Для кого?
+													</div>
+													<p>
+														Для тих, хто хоче унікальний будинок, повністю
+														адаптований під свої потреби та стиль життя
+													</p>
+												</div>
+											</li>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Гнучкість у плануванні
+													</div>
+													<p>
+														Повна свобода – можна змінювати планування, розміри
+														кімнат, архітектурний стиль
+													</p>
+												</div>
+											</li>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Термін розробки
+													</div>
+													<p>
+														Довший - від 2-х до 4-х місяців, залежно від
+														складності
+													</p>
+												</div>
+											</li>
+											<li class="flex mb-32 sm:mb-40 last:mb-0">
+												<div
+													class="flex-center p-8 border border-solid border-blue rounded w-max h-max flex-shrink-0 mr-12 sm:mr-16"
+												>
+													<svg class="size-32 fill-none stroke-blue mx-auto">
+														<use href="#chek-icon"></use>
+													</svg>
+												</div>
+												<div>
+													<div
+														class="text-[.2rem] text-blue font-semibold mb-4"
+													>
+														Врахування особливостей ділянки
+													</div>
+													<p>
+														Проєкт адаптується до ландшафту, розмірів ділянки,
+														розташування сусідів та орієнтації щодо сонця
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<button
+										class="border border-solid border-dark-blue rounded-30 p-16 font-s bg-white uppercase text-dark-blue font-semibold w-full lg:w-[calc(100%-.48rem)] text-center mx-auto block lg:hover:bg-dark-blue lg:hover:text-white transition-colors duration-300 ease-linear mb-[2px]"
+									>
+										переглянути індивідуальні проєкти
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="bg-dark-blue grid sm:grid-cols-[2fr,1fr] gap-x-20 gap-y-32 text-white pb-[.56rem] sm:pb-0"
+				>
+					<div class="image h-[2.75rem] sm:h-[5.2rem]">
+						<img
+							class="object-cover"
+							src="@img/AD_4nXf5RLml10OlpamuCAe2YebJ--W2UC58VsrDSbo4AD1d5g3Udc6OBvK6kFCzXjbx5bZbYPSI50xDdbK7gEdmDzPtKoyTqzPGbjvnlTmffKrW0XFM7-pPBoT- 2.png"
+							alt="House"
+						/>
+					</div>
+					<div class="flex items-center">
+						<div
+							class="border-t border-accent border-solid pt-24 mx-[var(--container-gap)]"
+						>
+							<div
+								data-aos="fade-up"
+								data-aos-delay="100"
+								class="max-w-[3.4rem] mb-32"
+							>
+								<h2 class="font-medium mb-20">Status House</h2>
+								<div class="font-medium mb-20">
+									Забезпечує узгоджену роботу всіх підрядників, контроль якості
+									на кожному етапі та дотримання встановлених термінів.
+								</div>
+								<div>
+									Ми прагнемо досягати найвищих результатів, гарантуючи нашим
+									клієнтам повний спокій та впевненість у надійній реалізації
+									їхнього проекту.
+								</div>
+							</div>
+							<button
+								data-aos="fade-up"
+								data-aos-delay="200"
+								data-modal="callback"
+								class="text-s flex items-center justify-center uppercase rounded-30 h-[.54rem] w-full sm:w-auto py-12 text-white font-medium mt-auto bg-blue hover:bg-transparent border border-solid border-blue hover:border-white transition-colors duration-300 px-32"
+							>
+								<span>залишити заявку</span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="pt-100 sm:pt-[1.3rem] pb-40">
+					<div class="container">
+						<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-32">
+							<div
+								data-aos="fade-up"
+								class="sm:col-start-1 sm:col-end-3 lg:col-end-2"
+							>
+								<h2 class="h3 font-medium mb-24 lg:mb-16">
+									Монолітні роботи — одна з сильних сторін нашої компанії
+								</h2>
+								<div class="font-medium mb-32">
+									Наша досвідчена команда забезпечує надійність, точність і
+									високу якість кожного проєкту. Ми використовуємо сучасні
+									технології та матеріали, щоб реалізовувати складні
+									архітектурні рішення, гарантуючи міцність і довговічність
+									конструкцій.
+								</div>
+								<a
+									href="monolith.html"
+									class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
+								>
+									Більше про проєкт
+								</a>
+							</div>
+							<div
+								data-aos="fade-up"
+								data-aos-delay="100"
+								class="image h-[2.6rem] lg:h-[3.3rem]"
+							>
+								<img src="@img/monolit.png" alt="building" />
+							</div>
+							<div
+								data-aos="fade-up"
+								data-aos-delay="200"
+								class="image h-[2.6rem] lg:h-[3.3rem]"
+							>
+								<img src="@img/monolit_2.png" alt="building" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					data-aos="fade-up"
+					class="py-[1.3rem] sm:py-[1.8rem] gap-16 sm:gap-20"
+				>
+					<div class="container">
+						<h2
+							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+						>
+							Зробіть перший крок! Залиште свої контактні дані і отримайте
+							розрахунок кошторису
+						</h2>
+						<form
+							action="#"
+							class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+						>
+							<div class="flex flex-col">
+								<label for="name" class="text-s mb-4"> Ім’я</label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<div class="flex flex-col">
+								<label for="phone_1" class="text-s mb-4"> Номер телефона</label>
+								<input
+									type="text"
+									name="phone_1 "
+									id="phone_1"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<div class="flex flex-col">
+								<label for="mail" class="text-s mb-4"> E-mail</label>
+								<input
+									type="text"
+									name="mail"
+									id="mail"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<button class="h-[.54rem] btn-main mt-auto">
+								<span class="z-10">залишити заявку</span>
+							</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		@@include('html/_js.html',{})
+	</body>
+</html>

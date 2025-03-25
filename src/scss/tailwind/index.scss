@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav-list {
+		@apply lg:mr-32 text-white  last:mr-0 mb-32 lg:mb-0 border-b border-transparent border-solid lg:hover:border-white transition-colors duration-300 ease-linear last:mb-[.8rem] lg:last:mb-0;
+	}
+
+	.btn-main {
+		@apply relative text-s flex-center uppercase rounded-30 py-16 px-24 text-white font-medium before:position-0 before:btn-gradient overflow-hidden btn-gradient_hover lg:hover:before:opacity-0 before:transition-opacity before:duration-300 shadow-none lg:hover:box-shadow active:before:opacity-0 h-max;
+	}
+	.project-tag {
+		@apply border border-solid border-blue rounded-30 py-8 px-14 sm:px-16 text-blue sm:font-medium flex-shrink-0 text-s sm:text-m;
+	}
+}
+@layer utilities {
+	.btn-gradient {
+		background: linear-gradient(271deg, #000a52 0.73%, #003279 96.55%);
+	}
+	.btn-gradient_hover {
+		background: linear-gradient(91deg, #000a52 0.73%, #003279 96.55%);
+	}
+	.btn-header-gradient {
+		background: linear-gradient(
+			94deg,
+			rgba(255, 255, 255, 0.2) 11.52%,
+			rgba(255, 255, 255, 0.4) 87.85%
+		);
+	}
+	.box-shadow {
+		box-shadow: 0px 10px 10px 0px rgba(49, 45, 43, 0.15);
+	}
+	.text-clamp_2 {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 2;
+	}
+}

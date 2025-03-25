@@ -1,0 +1,15 @@
+header,
+.header {
+	position: absolute;
+	background: var(--header-gradient);
+
+	&.active {
+		.menu {
+			transform: translateX(-3.75rem);
+			z-index: -1;
+		}
+		.active-none {
+			display: none !important;
+		}
+	}
+}

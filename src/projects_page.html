@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"prolects"})
+	<body class="body text-dark-blue">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+			<main>
+				<section class="mt-[calc(var(--header-height)+.5rem)] mb-[.9rem]">
+					<div class="container">
+						<h1 class="h2 font-semibold mb-16 sm:mb-36">Наші проєкти</h1>
+						<div
+							class="grid grid-cols-[1fr,0.42rem] sm:grid-cols-2 lg:grid-cols-[1fr,3fr] gap-10 sm:gap-20 relative"
+						>
+							<div
+								class="filter-btn uppercase font-semibold items-center max-w-[2.9rem] px-12 py-8 border border-solid border-dark-blue rounded-30 flex justify-between lg:p-0 lg:border-transparent z-30 bg-transparent transition-colors duration-300"
+							>
+								<span> Фільтри </span
+								><svg
+									class="block size-24 fill-none stroke-dark-blue lg:hidden transition-transform duration-300"
+								>
+									<use xlink:href="#shevron-icon"></use>
+								</svg>
+							</div>
+							<div class="flex justify-end lg:justify-between items-center">
+								<div class="lg:gap-4 hidden lg:flex">
+									<div
+										class="border border-solid border-dark-blue text-s rounded-30 px-12 py-8 flex gap-4 cursor-pointer"
+									>
+										<span>Цегла</span>
+										<span
+											class="block relative size-16 before:absolute before:h-[1px] before:w-14 before:bg-dark-blue before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 after:absolute after:w-[1px] after:h-14 after:bg-dark-blue after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 before:rotate-45 after:rotate-45 hover:scale-[1.15] transition-transform duration-300"
+										></span>
+									</div>
+									<div
+										class="border border-solid border-dark-blue text-s rounded-30 px-12 py-8 flex gap-4 cursor-pointer"
+									>
+										<span>2 спальні</span>
+										<span
+											class="block relative size-16 before:absolute before:h-[1px] before:w-14 before:bg-dark-blue before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 after:absolute after:w-[1px] after:h-14 after:bg-dark-blue after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 before:rotate-45 after:rotate-45 hover:scale-[1.15] transition-transform duration-300"
+										></span>
+									</div>
+									<div
+										class="border border-solid border-dark-blue text-s rounded-30 px-12 py-8 flex gap-4 cursor-pointer"
+									>
+										<span>1 поверх</span>
+										<span
+											class="block relative size-16 before:absolute before:h-[1px] before:w-14 before:bg-dark-blue before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 after:absolute after:w-[1px] after:h-14 after:bg-dark-blue after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 before:rotate-45 after:rotate-45 hover:scale-[1.15] transition-transform duration-300"
+										></span>
+									</div>
+
+									<div
+										class="border border-solid border-dark-blue text-s rounded-30 px-12 py-8 flex gap-4 cursor-pointer"
+									>
+										<span>2 санвузли</span>
+										<span
+											class="block relative size-16 before:absolute before:h-[1px] before:w-14 before:bg-dark-blue before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 after:absolute after:w-[1px] after:h-14 after:bg-dark-blue after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 before:rotate-45 after:rotate-45 hover:scale-[1.15] transition-transform duration-300"
+										></span>
+									</div>
+									<button
+										class="bg-light-blue text-s rounded-30 px-12 py-8 lg:hover:bg-blue lg:hover:text-white transition-colors duration-300"
+									>
+										Скинути всі фільтри
+									</button>
+								</div>
+
+								<div class="dropdown relative ml-auto">
+									<div
+										class="dropdown__btn sm:min-w-[2.9rem] flex gap-8 border border-solid border-dark-blue px-8 sm:px-12 py-8 rounded-30 cursor-pointer justify-between"
+									>
+										<span
+											class="dropdown__active hidden sm:block"
+											data-active=""
+											data-selected=""
+											><span></span>
+										</span>
+										<span
+											class="dropdown__icon transition-transform duration-300 hidden sm:block"
+										>
+											<svg class="size-24 fill-none stroke-dark-blue">
+												<use xlink:href="#shevron_buttom-icon"></use>
+											</svg>
+										</span>
+										<svg class="size-24 fill-dark-blue sm:hidden">
+											<use xlink:href="#sorting-icon"></use>
+										</svg>
+									</div>
+									<div
+										class="dropdown__content p-16 opacity-0 rounded-8 bg-blue box-shadow absolute right-0 w-max sm:w-full border border-solid border-blue top-[100%] text-white z-20 transition-opacity duration-300 ease-linear"
+									>
+										<ul class="dropdown__list">
+											<li
+												class="dropdown__item cursor-pointer mb-8 last:mb-0 lg:hover:text-dark-blue transition-colors duration-300"
+											>
+												Сщртувати за замовчуванням
+											</li>
+											<li
+												class="dropdown__item cursor-pointer mb-8 last:mb-0 lg:hover:text-dark-blue transition-colors duration-300"
+											>
+												Сортувати від нових
+											</li>
+											<li
+												class="dropdown__item cursor-pointer mb-8 last:mb-0 lg:hover:text-dark-blue transition-colors duration-300"
+											>
+												Сортувати від старих
+											</li>
+											<li
+												class="dropdown__item cursor-pointer mb-8 last:mb-0 lg:hover:text-dark-blue transition-colors duration-300"
+											>
+												Сортувати від більшої ціни
+											</li>
+											<li
+												class="dropdown__item cursor-pointer mb-8 last:mb-0 lg:hover:text-dark-blue transition-colors duration-300"
+											>
+												Сортувати від нижчої ціни
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="projects-filter w-[2.9rem] lg:w-full overflow-x-scroll px-16 pt-[.64rem] pb-24 lg:py-24 bg-light-blue absolute lg:static box-shadow top-0 lg:top-auto rounded-t-30 lg:rounded-none lg:shadow-none -left-[3.5rem] z-20 transition-transform duration-300"
+							>
+								<form action="#">
+									<div class="accordion accordion--open mb-24 last:mb-0">
+										<div
+											class="accordion-header cursor-pointer flex items-center justify-between lg:hover:text-blue duration-300 transition-colors font-semibold"
+										>
+											<span>Статус </span>
+
+											<svg
+												class="size-24 fill-none stroke-dark-blue accordion-header-icon"
+											>
+												<use xlink:href="#shevron_buttom-icon"></use>
+											</svg>
+										</div>
+										<div
+											class="accordion-content max-h-0 overflow-hidden transition-[max-height] active font-medium mb-24 last:mb-0"
+										>
+											<div class="pt-8">
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300 mb-12 last:mb-0"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Типові
+												</label>
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Індивідуальні
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="accordion accordion--open mb-24 last:mb-0">
+										<div
+											class="accordion-header cursor-pointer flex items-center justify-between lg:hover:text-blue duration-300 transition-colors font-semibold"
+										>
+											<span>Статус </span>
+
+											<svg
+												class="size-24 fill-none stroke-dark-blue accordion-header-icon"
+											>
+												<use xlink:href="#shevron_buttom-icon"></use>
+											</svg>
+										</div>
+										<div
+											class="accordion-content max-h-0 overflow-hidden transition-[max-height] active font-medium mb-24 last:mb-0"
+										>
+											<div class="pt-8">
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300 mb-12 last:mb-0"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Типові
+												</label>
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Індивідуальні
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="accordion accordion--open mb-24 last:mb-0">
+										<div
+											class="accordion-header cursor-pointer flex items-center justify-between lg:hover:text-blue duration-300 transition-colors font-semibold"
+										>
+											<span>Статус </span>
+
+											<svg
+												class="size-24 fill-none stroke-dark-blue accordion-header-icon"
+											>
+												<use xlink:href="#shevron_buttom-icon"></use>
+											</svg>
+										</div>
+										<div
+											class="accordion-content max-h-0 overflow-hidden transition-[max-height] active font-medium mb-24 last:mb-0"
+										>
+											<div class="pt-8">
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300 mb-12 last:mb-0"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Типові
+												</label>
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Індивідуальні
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="accordion accordion--open mb-24 last:mb-0">
+										<div
+											class="accordion-header cursor-pointer flex items-center justify-between lg:hover:text-blue duration-300 transition-colors font-semibold"
+										>
+											<span>Статус </span>
+
+											<svg
+												class="size-24 fill-none stroke-dark-blue accordion-header-icon"
+											>
+												<use xlink:href="#shevron_buttom-icon"></use>
+											</svg>
+										</div>
+										<div
+											class="accordion-content max-h-0 overflow-hidden transition-[max-height] active font-medium mb-24 last:mb-0"
+										>
+											<div class="pt-8">
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300 mb-12 last:mb-0"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Типові
+												</label>
+												<label
+													class="checkbox flex items-center gap-16 w-max cursor-pointer lg:hover:text-blue transition-colors duration-300"
+												>
+													<input type="checkbox" class="hidden" />
+													<span
+														class="size-32 border border-solid border-blue rounded-8 relative flex-center transition-colors duration-300 before:transition-colors before:duration-300"
+														><svg
+															class="size-24 stroke-transparent fill-none transition-colors duration-300"
+														>
+															<use href="#chek-icon"></use>
+														</svg>
+													</span>
+													Індивідуальні
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<button
+										class="border border-solid border-dark-blue rounded-30 p-16 font-s bg-transparent uppercase text-dark-blue font-semibold w-full text-center mx-auto block lg:hover:bg-blue lg:hover:text-white transition-colors duration-300 ease-linear mb-[2px]"
+									>
+										фільтрувати
+									</button>
+								</form>
+							</div>
+
+							<div
+								class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 col-start-1 col-end-3 lg:col-start-2 lg:col-end-3"
+							>
+								<div>
+									<div class="relative">
+										<div class="swiper mb-14" data-swiper="project">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="image w-full pt-[64%]">
+														<img
+															class="object-cover"
+															src="@img/project_slider.png"
+															alt="project"
+														/>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="image w-full pt-[64%]">
+														<img
+															class="object-cover"
+															src="@img/project_slider.png"
+															alt="project"
+														/>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button
+											class="project-next bg-[#C3CFDA] py-8 pl-8 pr-4 rounded-l-30 w-max lg:hover:bg-white transition-colors duration-300 absolute right-0 z-10 top-1/2 -translate-y-1/2"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+										<button
+											class="project-prev bg-[#C3CFDA] py-8 pl-4 pr-8 rounded-r-30 w-max lg:hover:bg-white transition-colors duration-300 absolute left-0 z-10 top-1/2 -translate-y-1/2"
+										>
+											<svg
+												class="size-24 fill-none stroke-blue transition-[stroke] duration-[.35s] ease-linear rotate-180"
+											>
+												<use href="#shevron-icon"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="flex gap-8 mb-14 overflow-x-scroll">
+										<div class="project-tag text-s px-12 font-normal">
+											Проєкт Zx84
+										</div>
+										<div class="project-tag text-s px-12 font-normal">
+											111 м²
+										</div>
+										<div class="project-tag text-s px-12 font-normal">
+											Реалізацій : 12
+										</div>
+									</div>
+									<a
+										href="project.html"
+										class="flex gap-12 justify-between items-center project-link hover:scale-[1.02] transition-transform duration-300"
+									>
+										<h3 class="h4 font-semibold text-clamp_2">Zx84</h3>
+										<div
+											class="rounded flex-center size-40 bg-blue flex-shrink-0"
+										>
+											<svg
+												class="size-20 fill-white transition-transform duration-300 ease-linear"
+											>
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- форма -->
+				<section
+					class="mb-[1rem] sm:mb-[1.3rem]"
+					data-aos="fade-up"
+					class="gap-16 sm:gap-20"
+				>
+					<div class="container">
+						<div class="py-50 sm:py-100 px-16 bg-light-blue">
+							<h2 class="h3 font-medium max-w-[9rem] mx-auto text-center mb-32">
+								Є питання по проєкту? <br />
+								Залиште свої контактні дані і наші менеджери проконсультують вас
+							</h2>
+							<form
+								action="#"
+								class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+							>
+								<div class="flex flex-col">
+									<label for="name" class="text-s mb-4"> Ім’я</label>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<div class="flex flex-col">
+									<label for="phone_1" class="text-s mb-4">
+										Номер телефона</label
+									>
+									<input
+										type="text"
+										name="phone_1 "
+										id="phone_1"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<div class="flex flex-col">
+									<label for="mail" class="text-s mb-4"> E-mail</label>
+									<input
+										type="text"
+										name="mail"
+										id="mail"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+								</div>
+								<button class="text-s btn-main mt-auto">
+									<span class="z-10">залишити заявку</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		@@include('html/_js.html',{})
+	</body>
+</html>
