@@ -236,15 +236,22 @@
 							</div>
 						</div>
 						<div class="grid lg:grid-cols-2 gap-20 mb-24">
-							<div class="image w-full pt-[49.5%]">
+							<div
+								class="image w-full pt-[49.5%]"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
 								<img src="@img/project_slider.png" alt="img" />
 							</div>
-							<div class="image w-full pt-[49.5%] hidden lg:block">
+							<div
+								class="image w-full pt-[49.5%] hidden lg:block"
+								data-aos="fade-up"
+							>
 								<img src="@img/individual.png" alt="img" />
 							</div>
 						</div>
 						<div class="grid lg:grid-cols-2 gap-20">
-							<div class="accordion accordion-services">
+							<div class="accordion accordion-services" data-aos="fade-up">
 								<div
 									class="accordion-header flex justify-center items-center sm:p-16 p-8 text-[.2rem] uppercase font-semibold w-full relative bg-light-blue rounded-8 min-h-[.56rem] cursor-pointer pr-50 text-center"
 								>
@@ -346,7 +353,11 @@
 									</button>
 								</div>
 							</div>
-							<div class="accordion accordion-services h-full">
+							<div
+								class="accordion accordion-services h-full"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
 								<div
 									class="accordion-header flex justify-center items-center sm:p-16 p-8 text-[.2rem] uppercase font-semibold w-full relative bg-light-blue rounded-8 min-h-[.56rem] cursor-pointer pr-50 text-center"
 								>
@@ -442,11 +453,12 @@
 											</li>
 										</ul>
 									</div>
-									<button
+									<a
+										href="individual_projection.html"
 										class="border border-solid border-dark-blue rounded-30 p-16 font-s bg-white uppercase text-dark-blue font-semibold w-full lg:w-[calc(100%-.48rem)] text-center mx-auto block lg:hover:bg-dark-blue lg:hover:text-white transition-colors duration-300 ease-linear mb-[2px]"
 									>
 										переглянути індивідуальні проєкти
-									</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -535,58 +547,66 @@
 					</div>
 				</section>
 
-				<section
-					data-aos="fade-up"
-					class="py-[1.3rem] sm:py-[1.8rem] gap-16 sm:gap-20"
-				>
+				<section class="py-[1rem] sm:py-[1.3rem]" data-aos="fade-up">
 					<div class="container">
-						<h2
-							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
-						>
-							Зробіть перший крок! Залиште свої контактні дані і отримайте
-							розрахунок кошторису
-						</h2>
-						<form
-							action="#"
-							class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
-						>
-							<div class="flex flex-col">
-								<label for="name" class="text-s mb-4"> Ім’я</label>
-								<input
-									type="text"
-									name="name"
-									id="name"
-									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-								/>
-							</div>
-							<div class="flex flex-col">
-								<label for="phone_1" class="text-s mb-4"> Номер телефона</label>
-								<input
-									type="text"
-									name="phone_1 "
-									id="phone_1"
-									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-								/>
-							</div>
-							<div class="flex flex-col">
-								<label for="mail" class="text-s mb-4"> E-mail</label>
-								<input
-									type="text"
-									name="mail"
-									id="mail"
-									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-								/>
-							</div>
-							<button class="h-[.54rem] btn-main mt-auto">
-								<span class="z-10">залишити заявку</span>
-							</button>
-						</form>
+						<div class="py-50 sm:py-100 px-16 bg-light-blue">
+							<h2
+								class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+							>
+								Зробіть перший крок! Залиште свої контактні дані і отримайте
+								розрахунок кошторису
+							</h2>
+							<form
+								action="#"
+								class="form grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] sm:px-[.3rem]"
+							>
+								<div class="flex form-item flex-col">
+									<label for="name-add" class="text-s mb-4"> Ім’я</label>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+									<div class="form-item__message"></div>
+								</div>
+								<div class="flex form-item flex-col">
+									<label for="phone-add" class="text-s mb-4">
+										Номер телефона</label
+									>
+									<input
+										type="text"
+										name="phone"
+										id="phone"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+									<div class="form-item__message"></div>
+								</div>
+								<div class="flex form-item flex-col">
+									<label for="email-add" class="text-s mb-4"> E-mail</label>
+									<input
+										type="text"
+										name="email"
+										id="email"
+										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+									/>
+									<div class="form-item__message"></div>
+								</div>
+								<button
+									type="submit"
+									class="btn-main h-[0.54rem] w-[2.85rem] self-end"
+								>
+									<span class="z-10">залишити заявку</span>
+								</button>
+							</form>
+						</div>
 					</div>
 				</section>
 			</main>
 			@@include('html/_footer.html',{})
 		</div>
 		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
-		@@include('html/_js.html',{})
+		<script src="js/app.min.js"></script>
+		<script src="js/services.min.js"></script>
 	</body>
 </html>

@@ -1,4 +1,6 @@
 import dropdown from '../modules/dropdown.js'
+import accordion from '../modules/accordion.js'
+import { project } from '../modules/sliders.js'
 
 window.addEventListener('DOMContentLoaded', () => {
 	const filterBtn = document.querySelector('.filter-btn')
@@ -14,8 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	try {
 		dropdown()
-
-		new Form('.form-add').init()
+		accordion('.accordion', '.accordion-header', '.accordion-content')
+		project()
 	} catch (e) {
 		console.log(e)
 	}

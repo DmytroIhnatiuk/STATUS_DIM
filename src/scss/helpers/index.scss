@@ -1,17 +1,11 @@
 @import 'h';
 
-.btn-transition {
-	transition: background 0.35s linear;
-	span {
-		transition: color 0.35s linear;
-	}
-}
 .icon-hover {
 	@media all and (min-width: 1024px) {
 		&:hover {
 			background: var(--white);
 			svg {
-				stroke: black !important;
+				stroke: black;
 			}
 		}
 	}

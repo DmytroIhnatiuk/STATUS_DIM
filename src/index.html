@@ -160,10 +160,14 @@
 				<!-- наші проєкти -->
 				<section class="sm:py-[1.3rem] py-[1rem]">
 					<div class="lg:px-[var(--container-gap)] pl-[var(--container-gap)]">
-						<h2 class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem] mb-24">
+						<h2
+							class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem] mb-24"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							Наші проєкти
 						</h2>
-						<div class="tabs-container">
+						<div class="tabs-container" data-aos="fade-up" data-aos-delay="300">
 							<div class="flex justify-between mb-16 pr-[var(--container-gap)]">
 								<div class="flex gap-16 overflow-x-scroll tab__buttons">
 									<div
@@ -503,7 +507,7 @@
 																	>
 																		<img
 																			class="object-cover"
-																			src="@img/.png"
+																			src="@img/"
 																			alt="project"
 																		/>
 																	</div>
@@ -803,13 +807,17 @@
 						<div
 							class="bg-light-blue grid lg:grid-cols-[2fr,1fr] sm:grid-cols-2 gap-24"
 						>
-							<div class="lg:py-50 lg:pl-50 py-40 pl-16 pr-16 sm:pr-0">
+							<div
+								class="lg:py-50 lg:pl-50 py-40 pl-16 pr-16 sm:pr-0 hidden"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
 								<h2
 									class="font-medium max-w-[6.7rem] text-center mb-24 sm:text-left"
 								>
 									Розрахуйте вартість вашого проєкту в декілька кліків!
 								</h2>
-								<!-- TODO тут напевно треба форму але я не знаю як її зробити -->
+
 								<h3 class="h4 font-semibold mb-24">
 									<span class="mr-8">01/</span>Оберіть пакет послуг:
 								</h3>
@@ -859,7 +867,7 @@
 											</div>
 											<span class="lg:text-center block"
 												>(фасад, вікна, звіси покрівлі, водостічна
-												система))</span
+												система)</span
 											>
 										</div>
 									</div>
@@ -895,290 +903,80 @@
 									<span class="z-10 text-s">розрахувати</span>
 								</button>
 							</div>
-							<div class="image min-h-[3.27rem] sm:min-h-[6.06rem] h-full">
+							<div
+								class="lg:py-50 lg:pl-50 py-40 pl-16 pr-16 sm:pr-0"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<h2
+									class="font-medium max-w-[6.7rem] text-center mb-24 lg:mb-50 sm:text-left"
+								>
+									Розрахуйте вартість вашого проєкту в декілька кліків!
+								</h2>
+								<h3
+									class="font-medium text-center mb-24 sm:text-left text-blue lg:mb-50"
+								>
+									Орієнтовна вартість <span>999 999</span> грн.
+								</h3>
+								<h3 class="h4 font-semibold mb-24">
+									<span class="mr-8">03/</span>Залиште свої контактні данні для
+									детального прорахунку:
+								</h3>
+								<form class="form-calc text-blue max-w-[7.26rem]">
+									<div
+										class="flex flex-wrap justify-center mx-auto gap-x-12 gap-y-24"
+									>
+										<div class="flex form-item flex-col w-full lg:w-[2.34rem]">
+											<label for="name-add" class="text-s mb-4"> Ім’я</label>
+											<input
+												type="text"
+												name="name"
+												id="name-calc"
+												class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+											/>
+											<div class="form-item__message"></div>
+										</div>
+										<div class="flex form-item flex-col w-full lg:w-[2.34rem]">
+											<label for="phone-add" class="text-s mb-4">
+												Номер телефона</label
+											>
+											<input
+												type="text"
+												name="phone"
+												id="phone-calc"
+												class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+											/>
+											<div class="form-item__message"></div>
+										</div>
+										<div class="flex form-item flex-col w-full lg:w-[2.34rem]">
+											<label for="email-add" class="text-s mb-4"> E-mail</label>
+											<input
+												type="text"
+												name="email"
+												id="email-calc"
+												class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+											/>
+											<div class="form-item__message"></div>
+										</div>
+										<button
+											type="submit"
+											class="btn-main h-[0.54rem] w-full lg:w-[2.34rem] ml-auto"
+										>
+											<span class="z-10">залишити заявку</span>
+										</button>
+									</div>
+								</form>
+							</div>
+							<div
+								class="image min-h-[3.27rem] sm:min-h-[6.06rem] h-full"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
 								<img class="object-cover" src="@img/cost.png" alt="cost" />
 							</div>
 						</div>
 					</div>
 				</section>
-
-				<!-- <section>
-					<div
-						class="container pt-[1rem] sm:pt[1.3rem] pb-[var(--section-padding)]"
-					>
-						<div
-							data-aos="fade-up"
-							data-aos-delay="200"
-							class="flex justify-between mb-32"
-						>
-							<h2 class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem]">
-								Наші проєкти
-							</h2>
-							<button
-								class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto min-w-max"
-							>
-								<span>Більше проєктів </span>
-							</button>
-						</div>
-						<div
-							data-aos="fade-up"
-							data-aos-delay="200"
-							class="swiper mb-36"
-							data-swiper="projects"
-						>
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
-										<div
-											class="image h-[3.8rem] h-[2.57rem] lg:h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
-										>
-											<img src="@img/slider_house_1.png" alt="house" />
-											<div
-												class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
-											>
-												<div
-													class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
-												>
-													Плюти, Київська область
-												</div>
-												<div class="text-s text-white">2024</div>
-											</div>
-										</div>
-										<div class="col-start-6 col-end-9 hidden lg:block">
-											<div class="image h-[1.84rem] mb-12">
-												<img src="@img/slider_house_2.png" alt="house" />
-											</div>
-											<div class="image h-[1.84rem]">
-												<img src="@img/slider_house_3.png" alt="house" />
-											</div>
-										</div>
-										<div
-											class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
-										>
-											<div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Площа</span>
-													<div class="h3 font-medium">340 м²</div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Локація</span>
-													<div class="h3 font-medium">Плюти </div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Рік забудови</span>
-													<div class="h3 font-medium">2024</div>
-												</div>
-											</div>
-											<div
-												class="text-s cursor-pointer font-bold border-solid border-b border-black hover:border-transparent max-w-max mx-auto sm:ml-0"
-											>
-												Більше про проєкт
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
-										<div
-											class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
-										>
-											<img src="@img/slider_house_1.png" alt="house" />
-											<div
-												class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
-											>
-												<div
-													class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
-												>
-													Плюти, Київська область
-												</div>
-												<div class="text-s text-white">2024</div>
-											</div>
-										</div>
-										<div class="col-start-6 col-end-9 hidden lg:block">
-											<div class="image h-[1.84rem] mb-12">
-												<img src="@img/slider_house_2.png" alt="house" />
-											</div>
-											<div class="image h-[1.84rem]">
-												<img src="@img/slider_house_3.png" alt="house" />
-											</div>
-										</div>
-										<div
-											class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
-										>
-											<div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Площа</span>
-													<div class="h3 font-medium">340 м²</div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Локація</span>
-													<div class="h3 font-medium">Плюти </div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Рік забудови</span>
-													<div class="h3 font-medium">2024</div>
-												</div>
-											</div>
-											<a
-												href="#"
-												class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
-											>
-												Більше про проєкт
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
-										<div
-											class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
-										>
-											<img src="@img/slider_house_1.png" alt="house" />
-											<div
-												class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
-											>
-												<div
-													class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
-												>
-													Плюти, Київська область
-												</div>
-												<div class="text-s text-white">2024</div>
-											</div>
-										</div>
-										<div class="col-start-6 col-end-9 hidden lg:block">
-											<div class="image h-[1.84rem] mb-12">
-												<img src="@img/slider_house_2.png" alt="house" />
-											</div>
-											<div class="image h-[1.84rem]">
-												<img src="@img/slider_house_3.png" alt="house" />
-											</div>
-										</div>
-										<div
-											class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
-										>
-											<div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Площа</span>
-													<div class="h3 font-medium">340 м²</div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Локація</span>
-													<div class="h3 font-medium">Плюти </div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Рік забудови</span>
-													<div class="h3 font-medium">2024</div>
-												</div>
-											</div>
-											<a
-												href="#"
-												class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
-											>
-												Більше про проєкт
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="flex gap-20 justify-center">
-							<button
-								class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center projects-prev lg:hover:opacity-70 transition-opacity"
-							>
-								<svg
-									class="size-24 flex justify-center items-center fill-none stroke-[var(--black)] rotate-180"
-								>
-									<use href="#shevron-icon"></use>
-								</svg>
-							</button>
-							<button
-								class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center projects-next lg:hover:opacity-70 transition-opacity"
-							>
-								<svg
-									class="size-24 flex justify-center items-center fill-none stroke-[var(--black)]"
-								>
-									<use href="#shevron-icon"></use>
-								</svg>
-							</button>
-						</div>
-					</div>
-				</section> -->
-				<!-- <section
-					data-aos="fade-up"
-					data-aos-delay="200"
-					class="pt-[var(--section-padding)] pb-[1.3rem] sm-[1.8rem]"
-				>
-					<div class="container">
-						<h2
-							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
-						>
-							Зробіть перший крок! Залиште свої контактні дані і отримайте
-							розрахунок кошторису
-						</h2>
-						<form class="form-add">
-							<div
-								class="flex flex-wrap justify-center lg:max-w-[11.35rem] mx-auto gap-16"
-							>
-								<div class="flex form-item flex-col w-[2.85rem]">
-									<label for="name-add" class="text-s mb-4"> Ім’я</label>
-									<input
-										type="text"
-										name="name"
-										id="name-add"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-									<div class="form-item__message"></div>
-								</div>
-								<div class="flex form-item flex-col w-[2.85rem]">
-									<label for="phone-add" class="text-s mb-4">
-										Номер телефона</label
-									>
-									<input
-										type="text"
-										name="phone"
-										id="phone-add"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-									<div class="form-item__message"></div>
-								</div>
-								<div class="flex form-item flex-col w-[2.85rem]">
-									<label for="email-add" class="text-s mb-4"> E-mail</label>
-									<input
-										type="text"
-										name="email"
-										id="email-add"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-									<div class="form-item__message"></div>
-								</div>
-								<button
-									type="submit"
-									class="text-s w-[2.85rem] lg:w-[2.3rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
-								>
-									<span>залишити заявку</span>
-								</button>
-							</div>
-						</form>
-					</div>
-				</section> -->
 
 				<!-- розрахунок вартості -->
 				<section class="bg-dark-blue sm:py-[1.3rem] py-[1rem] text-white">
@@ -1517,56 +1315,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- <section data-aos="fade-up" class="py-[1.3rem] sm:py-[1.8rem]">
-					<div class="container">
-						<h2
-							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
-						>
-							Зробіть перший крок! Залиште свої контактні дані і отримайте
-							розрахунок кошторису
-						</h2>
-						<form
-							class="grid form sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
-						>
-							<div class="flex form-item flex-col">
-								<label for="name" class="text-s mb-4"> Ім’я</label>
-								<input
-									type="text"
-									name="name"
-									id="name"
-									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-								/>
-								<div class="form-item__message"></div>
-							</div>
-							<div class="flex form-item flex-col">
-								<label for="phone" class="text-s mb-4"> Номер телефона</label>
-								<input
-									type="text"
-									name="phone"
-									id="phone"
-									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-								/>
-								<div class="form-item__message"></div>
-							</div>
-							<div class="flex form-item flex-col">
-								<label for="email" class="text-s mb-4"> E-mail</label>
-								<input
-									type="text"
-									name="email"
-									id="email"
-									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-								/>
-								<div class="form-item__message"></div>
-							</div>
-							<button
-								type="submit"
-								class="text-s flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
-							>
-								<span>залишити заявку</span>
-							</button>
-						</form>
-					</div>
-				</section> -->
+
 				<section
 					data-aos="fade-up"
 					data-aos-duration="1200"
@@ -1831,6 +1580,7 @@
 			@@include('html/_footer.html',{})
 		</div>
 		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
-		@@include('html/_js.html',{})
+		<script src="js/app.min.js"></script>
+		<script src="js/home.min.js"></script>
 	</body>
 </html>

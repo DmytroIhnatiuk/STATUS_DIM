@@ -1,12 +1,104 @@
 header,
 .header {
-	position: absolute;
+	position: fixed;
 	background: var(--header-gradient);
 
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		// max-height: 0;
+		// height: 100%;
+		left: 0;
+		bottom: 0;
+		background-color: transparent;
+		transition: background-color 0.6s ease-in;
+		z-index: -1;
+		opacity: 0.9;
+	}
+	&.fixed,
+	.fill {
+		&::before {
+			// max-height: 100%;
+			background-color: var(--light-blue);
+		}
+		.menu {
+			color: var(--dark-blue);
+		}
+		.burger {
+			border-color: var(--dark-blue);
+			.line {
+				background: var(--dark-blue);
+				&::before,
+				&::after {
+					background: var(--dark-blue);
+				}
+			}
+		}
+
+		.header-logo {
+			fill: var(--dark-blue);
+		}
+		@media all and (min-width: 1024px) {
+			.nav-list {
+				&:hover {
+					border-color: var(--dark-blue);
+				}
+			}
+			.header-btn {
+				border-color: var(--dark-blue);
+				color: var(--dark-blue);
+				background: transparent;
+
+				&:hover {
+					background: var(--dark-blue);
+					color: white;
+				}
+			}
+			.instagram {
+				&:hover {
+					background: var(--dark-blue);
+					svg {
+						stroke: white;
+					}
+				}
+				border-color: var(--dark-blue);
+
+				svg {
+					stroke: var(--dark-blue);
+				}
+			}
+		}
+		.header-phone {
+			border-color: var(--dark-blue);
+			svg {
+				stroke: var(--dark-blue);
+			}
+		}
+	}
+
 	&.active {
+		@media all and (max-width: 640px) {
+			.header-logo {
+				fill: white;
+			}
+		}
+
 		.menu {
 			transform: translateX(-3.75rem);
+			color: white;
 			z-index: -1;
+		}
+		.burger {
+			border-color: var(--white);
+			.line {
+				background: transparent;
+				&::before,
+				&::after {
+					background: var(--white);
+				}
+			}
 		}
 		.active-none {
 			display: none !important;

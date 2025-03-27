@@ -1,19 +1,24 @@
 <header
-	class="h-[var(--header-height)] py-24 mt-auto flex items-end z-50 w-full transition-transform duration-500 top-0 right-0 left-0"
+	class="h-[var(--header-height)] py-24 mt-auto flex z-50 w-full transition-transform duration-500 ease-linear top-0 right-0 left-0"
 >
 	<div class="container flex items-center justify-between">
 		<a
 			href="index.html"
 			class="h-[0.45rem] sm:h-[0.56rem] block w-[.54rem] lg:w-[.78remт] relative z-10 w"
 		>
-			<img class="object-contain w-max" src="@img/logo.png" alt="logo" />
+			<!-- <img class="object-contain w-max" src="@img/logo.png" alt="logo" /> -->
+			<svg
+				class="fill-white size-full duration-300 header-logo transition-colors ease-linear"
+			>
+				<use xlink:href="#logo"></use>
+			</svg>
 		</a>
 		<div
-			class="menu absolute lg:relative p-[.7rem] h-[7.3rem] w-[3.75rem] lg:w-auto lg:h-auto bg-dark-blue -right-[3.75rem] lg:right-0 lg:p-0 top-0 flex flex-col items-center justify-center lg:flex-row translate-x-full lg:translate-x-0 transition-transform duration-300 lg:bg-transparent"
+			class="menu absolute lg:relative p-[.7rem] h-[7.3rem] w-[3.75rem] lg:w-auto lg:h-auto bg-dark-blue -right-[3.75rem] lg:right-0 lg:p-0 top-0 flex flex-col items-center justify-center lg:flex-row translate-x-full lg:translate-x-0 transition-transform duration-300 lg:bg-transparent text-white"
 		>
 			<nav class="lg:mr-[.54rem]">
 				<ul
-					class="flex flex-col items-center lg:flex-row text-white uppercase text-l lg:text-s"
+					class="flex flex-col items-center lg:flex-row uppercase text-l lg:text-s"
 				>
 					<li class="nav-list">
 						<a href="about.html">Про нас</a>
@@ -31,7 +36,7 @@
 			</nav>
 			<button
 				data-modal="callback"
-				class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] w-[2.33rem] border border-white border-solid px-16 py-12 text-white font-medium lg:btn-header-gradient lg:hover:bg-white lg:hover:text-dark-blue active:bg-white active:text-dark-blue btn-transition lg:mr-12 mb-32 lg:mb-0 lg:border-transparent transition-colors duration-300"
+				class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] w-[2.33rem] border border-white border-solid px-16 py-12 text-white font-medium lg:btn-header-gradient lg:hover:bg-white lg:hover:text-dark-blue active:bg-white active:text-dark-blue btn-transition lg:mr-12 mb-32 lg:mb-0 lg:border-transparent transition-colors duration-300 header-btn"
 			>
 				<span>Отримати консультацію</span>
 			</button>
@@ -48,7 +53,7 @@
 				</a>
 				<a
 					href="#"
-					class="size-[.32rem] lg:size-[.43rem] rounded border border-solid border-white flex items-center justify-center icon-hover"
+					class="size-[.32rem] lg:size-[.43rem] rounded border border-solid border-white flex items-center justify-center instagram transition-colors duration-300 icon-hover"
 				>
 					<svg
 						class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
@@ -61,10 +66,10 @@
 		<div class="flex lg:hidden">
 			<a
 				href="#"
-				class="size-[.32rem] rounded border border-solid border-white flex items-center justify-center icon-hover active-none mr-8"
+				class="size-[.32rem] rounded border border-solid border-white flex items-center justify-center icon-hover active-none mr-8 header-phone transition-colors duration-300 ease"
 			>
 				<svg
-					class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
+					class="size-24 fill-none stroke-white transition-colors duration-300 ease"
 				>
 					<use href="#phone-icon"></use>
 				</svg>

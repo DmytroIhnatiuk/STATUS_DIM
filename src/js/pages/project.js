@@ -1,23 +1,20 @@
 import {
-	advantages,
-	projects,
-	project,
 	sliderProjectLg,
 	sliderMorePhoto,
+	project,
+	projects,
 } from '../modules/sliders.js'
-import Form from '../modules/Form.js'
+import accordion from '../modules/accordion.js'
 import initTabs from '../modules/tabs.js'
 
 window.addEventListener('DOMContentLoaded', () => {
 	try {
-		projects()
-		advantages()
+		accordion('.accordion', '.accordion-header', '.accordion-content')
 		project()
+		projects()
 		sliderProjectLg()
-		initTabs()
 		sliderMorePhoto()
-		new Form('.form-add').init()
-		new Form('.form-calc').init()
+		initTabs()
 	} catch (e) {
 		console.log(e)
 	}

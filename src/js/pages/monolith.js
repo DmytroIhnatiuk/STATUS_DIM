@@ -1,7 +1,10 @@
+import { advantages } from '../modules/sliders.js'
 import accordion from '../modules/accordion.js'
 
 window.addEventListener('DOMContentLoaded', () => {
 	try {
+		advantages()
+
 		let accordionInitialized = false
 		let resizeTimeout
 

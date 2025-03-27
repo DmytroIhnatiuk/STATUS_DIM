@@ -45,6 +45,11 @@ const config = {
 		app: `${paths.src}/js/app.js`,
 		home: `${paths.src}/js/pages/home.js`,
 		projects: `${paths.src}/js/pages/projects.js`,
+		about: `${paths.src}/js/pages/about.js`,
+		services: `${paths.src}/js/pages/services.js`,
+		monolith: `${paths.src}/js/pages/monolith.js`,
+		individualProjection: `${paths.src}/js/pages/individualProjection.js`,
+		project: `${paths.src}/js/pages/project.js`,
 	},
 
 	output: {

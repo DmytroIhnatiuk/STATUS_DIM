@@ -564,11 +564,7 @@
 						</div>
 					</div>
 				</section>
-				<section
-					class="py-[1rem] sm:py-[1.3rem]"
-					data-aos="fade-up"
-					class="gap-16 sm:gap-20"
-				>
+				<section class="py-[1rem] sm:py-[1.3rem]" data-aos="fade-up">
 					<div class="container">
 						<div class="py-50 sm:py-100 px-16 bg-light-blue">
 							<h2
@@ -579,38 +575,44 @@
 							</h2>
 							<form
 								action="#"
-								class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+								class="form grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] sm:px-[.3rem]"
 							>
-								<div class="flex flex-col">
-									<label for="name" class="text-s mb-4"> Ім’я</label>
+								<div class="flex form-item flex-col">
+									<label for="name-add" class="text-s mb-4"> Ім’я</label>
 									<input
 										type="text"
 										name="name"
 										id="name"
 										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
 									/>
+									<div class="form-item__message"></div>
 								</div>
-								<div class="flex flex-col">
-									<label for="phone_1" class="text-s mb-4">
+								<div class="flex form-item flex-col">
+									<label for="phone-add" class="text-s mb-4">
 										Номер телефона</label
 									>
 									<input
 										type="text"
-										name="phone_1 "
-										id="phone_1"
+										name="phone"
+										id="phone"
 										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
 									/>
+									<div class="form-item__message"></div>
 								</div>
-								<div class="flex flex-col">
-									<label for="mail" class="text-s mb-4"> E-mail</label>
+								<div class="flex form-item flex-col">
+									<label for="email-add" class="text-s mb-4"> E-mail</label>
 									<input
 										type="text"
-										name="mail"
-										id="mail"
+										name="email"
+										id="email"
 										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
 									/>
+									<div class="form-item__message"></div>
 								</div>
-								<button class="text-s btn-main mt-auto">
+								<button
+									type="submit"
+									class="btn-main h-[0.54rem] w-[2.85rem] self-end"
+								>
 									<span class="z-10">залишити заявку</span>
 								</button>
 							</form>
@@ -621,6 +623,7 @@
 			@@include('html/_footer.html',{})
 		</div>
 		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
-		@@include('html/_js.html',{})
+		<script src="js/app.min.js"></script>
+		<script src="js/monolith.min.js"></script>
 	</body>
 </html>
